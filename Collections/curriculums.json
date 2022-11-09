@@ -1,0 +1,111 @@
+db.curriculums.insertMany([
+    {
+        "_id" : 1,
+        "usuario_id" : 10001,
+        "fortalezas" : ["Creatividad", "Persistencia", "Liderazgo"],
+        "idiomas" : [
+        {
+            "_id": 1,
+            "nombre" : "Inglés",
+            "nivel_expertiz" : "Básico"
+        },
+        {
+            "_id" : 4,
+            "nombre" : "Español",
+            "nivel_expertiz" : "Avanzado"
+        }
+       ],
+       "habilidades_tecnicas": [{
+            "_id" : 101,
+            "descripcion" : "Concoimiento de la Informática",
+            "nivel_expertiz" : "Avanzado",
+       }],
+    },
+     {
+        "_id" : 2,
+        "usuario_id" : 10002,
+        "fortalezas" : ["Estética", "Concentración", "Audacia"],
+        "idiomas" : [
+        {
+            "_id": 6,
+            "nombre" : "Portugues",
+            "nivel_expertiz" : "Avanzado"
+        },
+        {
+            "_id" : 4,
+            "nombre" : "Español",
+            "nivel_expertiz" : "Intermedio"
+        }
+       ],
+       "habilidades_tecnicas": [{
+            "_id" : 103,
+            "descripcion" : "Programación",
+            "nivel_expertiz" : "Avanzado",
+       }],
+    },
+    {
+        "_id" : 3,
+        "usuario_id" : 10003,
+        "fortalezas" : ["Persistencia", "Audacia", "Empatía", "Concentración"],
+        "idiomas" : [
+        {
+            "_id": 4,
+            "nombre" : "Español",
+            "nivel_expertiz" : "Intermedio"
+        },
+        {
+            "_id" : 1,
+            "nombre" : "Inglés",
+            "nivel_expertiz" : "Avanzado"
+        }
+       ],
+       "habilidades_tecnicas": [{
+            "_id" : 102,
+            "descripcion" : "Word,Excel y Power Point",
+            "nivel_expertiz" : "Intermedio",
+       }],
+    },
+     {
+        "_id" : 4,
+        "usuario_id" : 10004,
+        "fortalezas" : ["Estética", "Esperanza", "Adaptabilidad"],
+        "idiomas" : [
+        {
+            "_id": 10,
+            "nombre" : "Francés",
+            "nivel_expertiz" : "Básico"
+        },
+        {
+            "_id" : 1,
+            "nombre" : "Inglés",
+            "nivel_expertiz" : "Avanzado"
+        },
+        {
+            "_id" : 4,
+            "nombre" : "Español",
+            "nivel_expertiz" : "Avanzado"
+        }
+       ],
+       "habilidades_tecnicas": [{
+            "_id" : 105,
+            "descripcion" : "Robotica",
+            "nivel_expertiz" : "Intermedio",
+       }],
+    },
+    {
+        "_id" : 5,
+        "usuario_id" : 10005,
+        "fortalezas" : ["Concentración", "Liderazgo"],
+        "idiomas" :
+        [{
+            "_id": 4,
+            "nombre" : "Español",
+            "nivel_expertiz" : "Avanzado"
+        }],
+       "habilidades_tecnicas": [{
+            "_id" : 104,
+            "descripcion" : "Conocimiento de Redes sociales",
+            "nivel_expertiz" : "Avanzado",
+       }],
+    },
+])
