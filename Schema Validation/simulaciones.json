@@ -1,0 +1,60 @@
+db.createCollection(
+    "simulaciones",
+    {
+        validator: {
+            $jsonSchema: {
+                bsonType: "object",
+                description: "Validación de documentos de las simulaciones",
+                required: [
+                    "_id",
+                    "usuario_id",
+                    "fecha_hora",
+                    "calificacion",
+                ],
+                properties: {
+                    "_id" :{
+                        bsonType: "int",
+                        description: "_id' debe ser de tipo int y es obligatorio"
+                    },
+                    "usuario_id" :{
+                        bsonType: "int",
+                        description: "usuario_id' debe ser de tipo int, pertenecer a un usuario registrado y es obligatorio"
+                    },
+                    "fecha_hora" :{
+                        bsonType: "date",
+                        description: "fecha_hora' debe ser de tipo date y es obligatorio",
+                    },
+                    "calificacion" : {
+                        bsonType: "int",
+                        description: "calificacion' debe ser de tipo int y es obligatorio",
+                    },
+                    "preguntas" : {
+                        bsonType: "array",
+                        required: [
+                            "_id",
+                            "enunciado",
+                            "respuesta",
+                        ],
+                        properties: {
+                            "_id": {
+                                bsonType: "int",
+                                description: "_id' debe ser de tipo int y es obligatorio"
+                            },
+                            "enunciado": {
+                                bsonType: "string",
+                                maxLength: 120,
+                                description: "enunciado' debe ser de tipo string y es obligatorio",
+                            },
+                            "respuesta": {
+                                bsonType: "string",
+                                minLength: 20,
+                                maxLength: 240,
+                                description: "respuesta' debe ser de tipo string y es obligatorio",
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+)
