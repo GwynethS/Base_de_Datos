@@ -1,0 +1,37 @@
+db.grabaciones.insertMany([
+    {
+        "_id" : 10,
+        "simulacion_id" : 101,
+        "hora_inicio" : ISODate("2022-09-10T10:00:00"),
+        "hora_final" : ISODate("2022-09-10T11:43:40"),
+        "duracion" : "01:43:40"
+    },
+    {
+        "_id" : 11,
+        "simulacion_id" : 102,
+        "hora_inicio" : ISODate("2022-09-10T13:00:00"),
+        "hora_final" : ISODate("2022-09-10T13:45:20"),
+        "duracion" : "00:45:20"
+    },
+    {
+        "_id" : 12,
+        "simulacion_id" : 103,
+        "hora_inicio" : ISODate("2022-09-10T15:30:00"),
+        "hora_final" : ISODate("2022-09-10T16:49:19"),
+        "duracion" : "01:19:19",
+    },
+    {
+        "_id" : 13,
+        "simulacion_id" : 104,
+        "hora_inicio" : ISODate("2022-09-11T09:00:00"),
+        "hora_final" : ISODate("2022-09-11T10:33:00"),
+        "duracion" : "01:33:00"
+    },
+    {
+        "_id" : 14,
+        "simulacion_id" : 105,
+        "hora_inicio" : ISODate("2022-09-11T17:30:00"),
+        "hora_final" : ISODate("2022-09-11T19:23:20"),
+        "duracion" : "01:53:20"
+    },
+])
