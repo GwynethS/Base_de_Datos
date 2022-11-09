@@ -1,0 +1,58 @@
+db.createCollection(
+    "carreras",
+    {
+        validator:{
+            $jsonSchema:{
+                bsonType: "object",
+                description: "Validación de documentos de las carreras",
+                required: [
+                    "_id",
+                    "usuario_id",
+                    "nombre"
+                ],
+                properties: {
+                    "_id":{
+                        bsonType: "int",
+                        description: "_id' debe ser de tipo int y es obligatorio"
+                    },
+                    "usuario_id" : {
+                        bsonType: "int",
+                        description: "usuario_id' debe ser de tipo int, pertenecer a un usuario registrado y es obligatorio"
+                    },
+                    "nombre": {
+                        bsonType: "string",
+                        minLength: 2,
+                        maxLength: 50,
+                        description: "nombre' debe ser de tipo string y es obligatorio"
+                    },
+                    "institucion": {
+                        bsonType: "object",
+                        required: [
+                            "_id",
+                            "nombre",
+                            "tipo",
+                        ],
+                        properties:{
+                           "_id": {
+                                 bsonType: "string",
+                                 pattern: "^[0-9]{2}[A-Z]{2}$",
+                                 description: "_id' debe ser un string y es obligatorio"
+                           },
+                           "nombre": {
+                                bsonType: "string",
+                                minLength: 2,
+                                maxLength: 50,
+                                description: "nombre' debe ser de tipo string y es obligatorio"
+                           },
+                           "tipo" : {
+                                bsonType: "string",
+                                enum: ["Universidad", "Instituto"],
+                                description : "tipo' debe ser uno de estos dos valores: Universidad, Instituto y es obligatorio"
+                           },
+                        }
+                    }
+                }
+            }
+        }
+    }
+)
