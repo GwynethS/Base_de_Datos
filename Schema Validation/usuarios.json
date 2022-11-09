@@ -1,0 +1,60 @@
+db.createCollection(
+    "usuarios",
+    {
+        validator: {
+            $jsonSchema: {
+                bsonType: "object",
+                description: "Validación de documentos de usuarios",
+                required: [
+                    "_id",
+                    "nombre",
+                    "apellido",
+                    "edad",
+                    "correo",
+                    "fecha_nacimiento",
+                    "num_celular"
+                ],
+                properties: {
+                    "_id": {
+                        bsonType: "int",
+                        description: "_id' debe ser de tipo int y es obligatorio"
+                    },
+                   "nombre": {
+                        bsonType: "string",
+                        minLength: 2,
+                        maxLength: 20,
+                        description: "nombre' debe ser de tipo string y es obligatorio"
+                   },
+                   "apellido":{
+                        bsonType: "string",
+                        minLength: 2,
+                        maxLength: 20,
+                        description: "apellido' debe ser de tipo string y es obligatorio"
+                   },
+                   "edad":{
+                        bsonType: "int",
+                        minimum: 20,
+                        maximum: 30,
+                        description: "edad' debe ser de tipo int y es obligatorio"
+                   },
+                   "correo":{
+                        bsonType: "string",
+                        minLength: 10,
+                        maxLength: 50,
+                        description: "correo' debe ser de tipo string, contiene las direcciones gmail, hotmail u outlook y es obligatorio"
+                   },
+                    "fecha_nacimiento" : {
+                        bsonType: "date",
+                        description: "fecha_nacimiento' deber ser de tipo date y es obligatorio"
+                   },
+                   "num_celular":{
+                        bsonType: "int",
+                        maxLength: 15,
+                        minLength: 9,
+                        description: "num_celular' debe ser tipo int y es obligatorio"
+                   }
+                },
+            }
+        }
+    }
+)
