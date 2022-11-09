@@ -1,0 +1,47 @@
+db.usuarios.insertMany([
+    {
+        "_id" : 10001,
+        "nombre" : "Hugo",
+        "apellido" : "Quispe",
+        "edad" : 20,
+        "correo" : "hugo.quispe20@gmail.com",
+        "fecha_nacimiento" : ISODate(2002,10,02), // ISODate(year, month, day)
+        "num_celular" : 903405934,
+    },
+    {
+        "_id" : 10002,
+        "nombre" : "Martín",
+        "apellido" : "Flores",
+        "edad" : 22,
+        "correo" : "martin.flores22@gmail.com",
+        "fecha_nacimiento" : ISODate(2000,10,10),
+        "num_celular" : 902439456,
+    },
+    {
+        "_id" : 10003,
+        "nombre" : "Lucas",
+        "apellido" : "Sánchez",
+        "edad" : 21,
+        "correo" : "lucas.sanchez21@gmail.com",
+        "fecha_nacimiento" : ISODate(2001,01,03),
+        "num_celular" : 990234390,
+    },
+    {
+        "_id" : 10004,
+        "nombre" : "Mateo",
+        "apellido" : "García",
+        "edad" : 30,
+        "correo" : "mateo.garcia23@gmail.com",
+        "fecha_nacimiento" : ISODate(1999,10,24),
+        "num_celular" : 987234432,
+    },
+    {
+        "_id" : 10005,
+        "nombre" : "Leo",
+        "apellido" : "Rodríguez",
+        "edad" : 30,
+        "correo" : "leo.rodriguez30@gmail.com",
+        "fecha_nacimiento" : ISODate(1992,04,10),
+        "num_celular" : 903045000,
+    },
+])
