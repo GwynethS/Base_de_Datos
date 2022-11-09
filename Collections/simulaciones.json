@@ -1,5 +1,5 @@
 db.simulaciones.insertMany([
-    { //ISODate(2002,10,02), // ISODate(year, month, day)
+    {
         "_id" : 101,
         "usuario_id" : 10001,
         "fecha_hora" : ISODate("2022-09-10T10:00:00"),
