@@ -5,7 +5,7 @@ db.usuarios.insertMany([
         "apellido" : "Quispe",
         "edad" : 20,
         "correo" : "hugo.quispe20@gmail.com",
-        "fecha_nacimiento" : ISODate(2002,10,02), // ISODate(year, month, day)
+        "fecha_nacimiento" : ISODate(2002,10,02),
         "num_celular" : 903405934,
     },
     {
