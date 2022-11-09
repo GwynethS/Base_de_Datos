@@ -1,0 +1,52 @@
+db.carreras.insertMany([
+    {
+        "_id" : 1,
+        "usuario_id" : 10001,
+        "nombre" : "Ciencias Económicas y Empresariales",
+        "institucion" : {
+            "_id" : "15FA",
+            "nombre" : "Universidad Complutense de Madrid",
+            "tipo" : "Universidad"
+        }
+    },
+    {
+        "_id" : 2,
+        "usuario_id" : 10002,
+        "nombre" : "Ingeniería Industrial",
+        "institucion" :  {
+            "_id" : "21NI",
+            "nombre" : "Universidad Nacional de Ingenería",
+            "tipo" : "Universidad"
+        }
+    },
+    {
+        "_id" : 3,
+        "usuario_id" : 10003,
+        "nombre" : "Administración de Empresas",
+        "institucion" : {
+            "_id" : "32ID",
+            "nombre" : "IDAT",
+            "tipo" : "Instituto"
+        }
+    },
+     {
+        "_id" : 4,
+        "usuario_id" : 10004,
+        "nombre" : "Ingeniería Industrial",
+        "institucion" : {
+            "_id" : "15SM",
+            "nombre" : "Universidad Nacional Mayor de San Marcos",
+            "tipo" : "Universidad"
+        }
+    },
+     {
+        "_id" : 5,
+        "usuario_id" : 10004,
+        "nombre" : "Computación e Informática",
+        "institucion" : {
+            "_id" : "20CI",
+            "nombre" : "CIBERTEC",
+            "tipo" : "Instituto"
+        }
+    },
+])
