@@ -1,0 +1,80 @@
+db.createCollection(
+    "curriculums",
+    {
+        validator: {
+            $jsonSchema: {
+                bsonType: "object",
+                description: "Validación de documentos de los curriculums",
+                required:[
+                   "_id",
+                   "usuario_id",
+                   "fortalezas",
+                ],
+                properties: {
+                    "_id": {
+                        bsonType: "int",
+                        description: "_id' debe ser de tipo int y es obligatorio"
+                    },
+                    "usuario_id" : {
+                        bsonType: "int",
+                        description: "usuario_id' debe ser de tipo int, pertenecer a un usuario registrado y es obligatorio"
+                    },
+                    "fortalezas": {
+                        bsonType: "array",
+                        description: "fortalezas' debe ser un array de string y es obligatorio"
+                    },
+                    "idiomas": {
+                        bsonType: "array",
+                        required: [
+                            "_id",
+                            "nombre",
+                            "nivel_expertiz"
+                        ],
+                        properties: {
+                            "_id":{
+                                bsonType: "int",
+                                description: "_id' debe ser de tipo int y es obligatorio"
+                            },
+                            "nombre": {
+                                bsonType: "string",
+                                minLength: 2,
+                                maxLength: 50,
+                                description: "nombre' debe ser de tipo string y es obligatorio",
+                             },
+                            "nivel_expertiz": {
+                                bsonType: "string",
+                                enum: ["Básico", "Intermedio","Avanzado"],
+                                description: "nivel_expertiz' debe ser uno de estos tres valores: Básico, Intermedio, Avanzado y es obligatorio",
+                            }
+                        },
+                    },
+                    "habilidades_tecnicas": {
+                      bsonType: "array",
+                      required: [
+                         "_id",
+                         "descripcion",
+                         "nivel_expertiz"
+                        ],
+                      properties:{
+                         "_id": {
+                             bsonType: "int",
+                             description: "_id' debe ser de tipo int y es obligatorio",
+                         },
+                         "descripcion": {
+                             bsonType: "string",
+                             minLength: 5,
+                             maxLength: 120,
+                             description: "descripcion' debe ser de tipo string y es obligatorio"
+                         },
+                         "nivel_expertiz": {
+                             bsonType: "string",
+                             enum: ["Básico", "Intermedio","Avanzado"],
+                             description: "nivel_expertiz' debe ser uno de estos tres valores: Básico, Intermedio, Avanzado y es obligatorio",
+                         }
+                      }
+                   }
+               }
+            }
+        }
+    }
+)
