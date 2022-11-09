@@ -1,0 +1,35 @@
+db.createCollection(
+    "grabaciones",
+        {
+            validator:{
+                $jsonSchema:{
+                    bsonType: "object",
+                    description: "Validación de documentos de las grabaciones",
+                    required: [
+                        "_id",
+                        "simulacion_id",
+                        "hora_inicio",
+                        "hora_final",
+                    ],
+                    properties: {
+                        "_id":{
+                            bsonType: "int",
+                            description: "_id' deber ser de tipo int y es obligatorio",
+                        },
+                        "simulacion_id":{
+                            bsonType: "int",
+                            description: "_id' deber ser de tipo int y es obligatorio",
+                        },
+                        "hora_inicio" :{
+                            bsonType: "date",
+                            description: "hora_inicio' debe ser de tipo time y es obligatorio"
+                        },
+                        "hora_final" :{
+                            bsonType: "date",
+                            description: "hora_final' debe ser de tipo time y es obligatorio"
+                        }
+                    }
+                }
+            }
+        }
+)
