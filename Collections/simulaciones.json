@@ -6,17 +6,14 @@ db.simulaciones.insertMany([
         "calificacion" : 17,
         "preguntas" : [
         {
-            "_id" : 1001,
             "enunciado" : "¿Qué experiencias laborales y/o entrevistas ha tenido antes de la simulación?",
             "respuesta" : "Aún no he tenido experiencias laborales, pero he podido participar en diversas entrevistas universitarias.",
         },
         {
-            "_id" : 1002,
             "enunciado" : "¿Por qué deberíamos contratarte?",
             "respuesta" : "Porque soy una persona con capacidades natas. Además, puedo solucionar problemas entorno a mi especialidad.",
         },
         {
-            "_id" : 1003,
             "enunciado" : "¿Por qué quieres trabajar en nuestra empresa?",
             "respuesta" : "Porque es una empresa líder en el país, que cuenta con muchos beneficios laborales y siento que puedo aportar con ideas y/o soluciones para seguir creciendo a nivel nacional e internacional.",
         }
@@ -29,18 +26,15 @@ db.simulaciones.insertMany([
         "calificacion" : 19,
         "preguntas" : [
         {
-            "_id" : 1008,
             "enunciado" : "¿Coincide el puesto con tus expectativas a futuro?",
             "respuesta" : "Sí coincide el puesto hacía mis expectativas a futuro ya que me apasiona lo que hago y siento que puedo aportar con muchas ideas.",
 
         },
         {
-            "_id" : 1004,
             "enunciado" : "¿Qué habilidades te ayudarán a tener éxito en este puesto?",
             "respuesta" : "La creatividad y el trabajo en equipo ayudarán a tener éxito en el puesto que estoy postulando.",
         },
         {
-            "_id" : 1011,
             "enunciado" : "¿Cuál es su mayor logro?",
             "respuesta" : "Mi mayor logro fue competir en un concurso de ciencias a nivel internacional representando al Perú.",
         }
@@ -53,17 +47,14 @@ db.simulaciones.insertMany([
         "calificacion" : 18,
         "preguntas" : [
         {
-            "_id" : 1009,
             "enunciado" : "¿Cuál es el mayor reto y/o la mejor decisión que has tomado en tu vida?",
             "respuesta" : "El mayor reto en mi vida fue dejar a mi familia para poder estudiar mi carrera en el extranjero.",
         },
         {
-            "_id" : 1012,
             "enunciado" : "¿Qué podría contarme sobre su currículum?",
             "respuesta" : "Mi curriculum tiene amplios aspectos sobre mi vida estudiantil. Además, contiene todas las habilidades que he logrado durante el tiempo y las fortalezas que me definen.",
         },
         {
-            "_id" : 1007,
             "enunciado" : "¿Cuál es tu mayor debilidad o defecto?",
             "respuesta" : "Mi mayor defecto es que soy impaciente.",
         }
@@ -76,17 +67,14 @@ db.simulaciones.insertMany([
         "calificacion" : 15,
         "preguntas" : [
         {
-            "_id" : 1007,
             "enunciado" : "¿Cuál es tu mayor debilidad o defecto?",
             "respuesta" : "Intento ser muy perfeccionista en todo lo que hago y eso a veces lo considero como un defecto.",
         },
         {
-            "_id" : 1009,
             "enunciado" : "¿Cuál es el mayor reto y/o la mejor decisión que has tomado en tu vida?",
             "respuesta" : "La mejor decisión que tomé en mi vida fue la de independizarme, logrando mis objetivos por mérito propio.",
         },
         {
-            "_id" : 1006,
             "enunciado" : "¿Qué te gusta hacer en tu tiempo libre?",
             "respuesta" : "En mi tiempo libre me gusta leer libros o aprender cosas nuevas a través de videos en Youtube.",
         }
@@ -99,17 +87,14 @@ db.simulaciones.insertMany([
         "calificacion" : 14,
         "preguntas" : [
         {
-            "_id" : 1003,
             "enunciado" : "¿Por qué quieres trabajar en nuestra empresa ?",
             "respuesta" : "Porque la empresa va con mis habilidades, puedo aportar con ideas y además, hay un buen salario ecónomico. ",
         },
         {
-            "_id" : 1007,
             "enunciado" : "¿Cuál es tu mayor debilidad o defecto?",
             "respuesta" : "Soy poco tolerante con las personas.",
         },
         {
-            "_id" : 1010,
             "enunciado" : "¿Qué te hace diferente a otros candidatos?",
             "respuesta" : "Siento que mi personalidad y el carisma que tengo me hacen diferente de los otros candidatos.",
         }
