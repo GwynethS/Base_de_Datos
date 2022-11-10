@@ -31,15 +31,10 @@ db.createCollection(
                     "preguntas" : {
                         bsonType: "array",
                         required: [
-                            "_id",
                             "enunciado",
                             "respuesta",
                         ],
                         properties: {
-                            "_id": {
-                                bsonType: "int",
-                                description: "_id' debe ser de tipo int y es obligatorio"
-                            },
                             "enunciado": {
                                 bsonType: "string",
                                 maxLength: 120,
