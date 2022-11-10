@@ -28,16 +28,10 @@ db.createCollection(
                     "institucion": {
                         bsonType: "object",
                         required: [
-                            "_id",
                             "nombre",
                             "tipo",
                         ],
                         properties:{
-                           "_id": {
-                                 bsonType: "string",
-                                 pattern: "^[0-9]{2}[A-Z]{2}$",
-                                 description: "_id' debe ser un string y es obligatorio"
-                           },
                            "nombre": {
                                 bsonType: "string",
                                 minLength: 2,
