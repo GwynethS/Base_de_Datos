@@ -49,8 +49,8 @@ db.createCollection(
                    },
                    "num_celular":{
                         bsonType: "int",
-                        maxLength: 15,
-                        minLength: 9,
+                        minimum: 900000000,
+                        minLength:999999999,
                         description: "num_celular' debe ser tipo int y es obligatorio"
                    }
                 },
