@@ -1,103 +1,47 @@
-db.simulaciones.insertMany([
+db.usuarios.insertMany([
     {
-        "_id" : 101,
-        "usuario_id" : 10001,
-        "fecha_hora" : ISODate("2022-09-10T10:00:00"),
-        "calificacion" : 17,
-        "preguntas" : [
-        {
-            "enunciado" : "¿Qué experiencias laborales y/o entrevistas ha tenido antes de la simulación?",
-            "respuesta" : "Aún no he tenido experiencias laborales, pero he podido participar en diversas entrevistas universitarias.",
-        },
-        {
-            "enunciado" : "¿Por qué deberíamos contratarte?",
-            "respuesta" : "Porque soy una persona con capacidades natas. Además, puedo solucionar problemas entorno a mi especialidad.",
-        },
-        {
-            "enunciado" : "¿Por qué quieres trabajar en nuestra empresa?",
-            "respuesta" : "Porque es una empresa líder en el país, que cuenta con muchos beneficios laborales y siento que puedo aportar con ideas y/o soluciones para seguir creciendo a nivel nacional e internacional.",
-        }
-        ]
+        "_id" : 10001,
+        "nombre" : "Hugo",
+        "apellido" : "Quispe",
+        "edad" : 20,
+        "correo" : "hugo.quispe20@gmail.com",
+        "fecha_nacimiento" : ISODate(2002,10,02),
+        "num_celular" : 903405934,
     },
     {
-        "_id" : 102,
-        "usuario_id" : 10002,
-        "fecha_hora" : ISODate("2022-09-10T13:00:00"),
-        "calificacion" : 19,
-        "preguntas" : [
-        {
-            "enunciado" : "¿Coincide el puesto con tus expectativas a futuro?",
-            "respuesta" : "Sí coincide el puesto hacía mis expectativas a futuro ya que me apasiona lo que hago y siento que puedo aportar con muchas ideas.",
-
-        },
-        {
-            "enunciado" : "¿Qué habilidades te ayudarán a tener éxito en este puesto?",
-            "respuesta" : "La creatividad y el trabajo en equipo ayudarán a tener éxito en el puesto que estoy postulando.",
-        },
-        {
-            "enunciado" : "¿Cuál es su mayor logro?",
-            "respuesta" : "Mi mayor logro fue competir en un concurso de ciencias a nivel internacional representando al Perú.",
-        }
-        ]
-    },
-     {
-        "_id" : 103,
-        "usuario_id" : 10001,
-        "fecha_hora" : ISODate("2022-09-10T15:30:00"),
-        "calificacion" : 18,
-        "preguntas" : [
-        {
-            "enunciado" : "¿Cuál es el mayor reto y/o la mejor decisión que has tomado en tu vida?",
-            "respuesta" : "El mayor reto en mi vida fue dejar a mi familia para poder estudiar mi carrera en el extranjero.",
-        },
-        {
-            "enunciado" : "¿Qué podría contarme sobre su currículum?",
-            "respuesta" : "Mi curriculum tiene amplios aspectos sobre mi vida estudiantil. Además, contiene todas las habilidades que he logrado durante el tiempo y las fortalezas que me definen.",
-        },
-        {
-            "enunciado" : "¿Cuál es tu mayor debilidad o defecto?",
-            "respuesta" : "Mi mayor defecto es que soy impaciente.",
-        }
-        ]
+        "_id" : 10002,
+        "nombre" : "Martín",
+        "apellido" : "Flores",
+        "edad" : 22,
+        "correo" : "martin.flores22@gmail.com",
+        "fecha_nacimiento" : ISODate(2000,10,10),
+        "num_celular" : 902439456,
     },
     {
-        "_id" : 104,
-        "usuario_id" : 10003,
-        "fecha_hora" : ISODate("2022-09-11T09:00:00"),
-        "calificacion" : 15,
-        "preguntas" : [
-        {
-            "enunciado" : "¿Cuál es tu mayor debilidad o defecto?",
-            "respuesta" : "Intento ser muy perfeccionista en todo lo que hago y eso a veces lo considero como un defecto.",
-        },
-        {
-            "enunciado" : "¿Cuál es el mayor reto y/o la mejor decisión que has tomado en tu vida?",
-            "respuesta" : "La mejor decisión que tomé en mi vida fue la de independizarme, logrando mis objetivos por mérito propio.",
-        },
-        {
-            "enunciado" : "¿Qué te gusta hacer en tu tiempo libre?",
-            "respuesta" : "En mi tiempo libre me gusta leer libros o aprender cosas nuevas a través de videos en Youtube.",
-        }
-        ]
+        "_id" : 10003,
+        "nombre" : "Lucas",
+        "apellido" : "Sánchez",
+        "edad" : 21,
+        "correo" : "lucas.sanchez21@gmail.com",
+        "fecha_nacimiento" : ISODate(2001,01,03),
+        "num_celular" : 990234390,
     },
     {
-        "_id" : 105,
-        "usuario_id" : 10004,
-        "fecha_hora" : ISODate("2022-09-11T17:30:00"),
-        "calificacion" : 14,
-        "preguntas" : [
-        {
-            "enunciado" : "¿Por qué quieres trabajar en nuestra empresa ?",
-            "respuesta" : "Porque la empresa va con mis habilidades, puedo aportar con ideas y además, hay un buen salario ecónomico. ",
-        },
-        {
-            "enunciado" : "¿Cuál es tu mayor debilidad o defecto?",
-            "respuesta" : "Soy poco tolerante con las personas.",
-        },
-        {
-            "enunciado" : "¿Qué te hace diferente a otros candidatos?",
-            "respuesta" : "Siento que mi personalidad y el carisma que tengo me hacen diferente de los otros candidatos.",
-        }
-        ]
+        "_id" : 10004,
+        "nombre" : "Mateo",
+        "apellido" : "García",
+        "edad" : 30,
+        "correo" : "mateo.garcia23@gmail.com",
+        "fecha_nacimiento" : ISODate(1999,10,24),
+        "num_celular" : 987234432,
+    },
+    {
+        "_id" : 10005,
+        "nombre" : "Leo",
+        "apellido" : "Rodríguez",
+        "edad" : 30,
+        "correo" : "leo.rodriguez30@gmail.com",
+        "fecha_nacimiento" : ISODate(1992,04,10),
+        "num_celular" : 903045000,
     },
 ])
