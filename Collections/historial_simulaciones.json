@@ -1,4 +1,4 @@
-db.simulaciones.insertMany([
+db.historial_simulaciones.insertMany([
     {
         "_id" : 101,
         "usuario_id" : 10001,
@@ -17,7 +17,12 @@ db.simulaciones.insertMany([
             "enunciado" : "¿Por qué quieres trabajar en nuestra empresa?",
             "respuesta" : "Porque es una empresa líder en el país, que cuenta con muchos beneficios laborales y siento que puedo aportar con ideas y/o soluciones para seguir creciendo a nivel nacional e internacional.",
         }
-        ]
+        ],
+        "grabacion" : {
+            "hora_inicio" : ISODate("2022-09-10T10:00:00"),
+            "hora_final" : ISODate("2022-09-10T11:43:40"),
+            "duracion" : "01:43:40"
+        }
     },
     {
         "_id" : 102,
@@ -38,7 +43,12 @@ db.simulaciones.insertMany([
             "enunciado" : "¿Cuál es su mayor logro?",
             "respuesta" : "Mi mayor logro fue competir en un concurso de ciencias a nivel internacional representando al Perú.",
         }
-        ]
+        ],
+        "grabacion" : {
+            "hora_inicio" : ISODate("2022-09-10T13:00:00"),
+            "hora_final" : ISODate("2022-09-10T13:45:20"),
+            "duracion" : "00:45:20"
+        }
     },
      {
         "_id" : 103,
@@ -58,7 +68,12 @@ db.simulaciones.insertMany([
             "enunciado" : "¿Cuál es tu mayor debilidad o defecto?",
             "respuesta" : "Mi mayor defecto es que soy impaciente.",
         }
-        ]
+        ],
+        "grabacion" : {
+            "hora_inicio" : ISODate("2022-09-10T15:30:00"),
+            "hora_final" : ISODate("2022-09-10T16:49:19"),
+            "duracion" : "01:19:19",
+        }
     },
     {
         "_id" : 104,
@@ -78,7 +93,12 @@ db.simulaciones.insertMany([
             "enunciado" : "¿Qué te gusta hacer en tu tiempo libre?",
             "respuesta" : "En mi tiempo libre me gusta leer libros o aprender cosas nuevas a través de videos en Youtube.",
         }
-        ]
+        ],
+        "grabacion" : {
+            "hora_inicio" : ISODate("2022-09-11T09:00:00"),
+            "hora_final" : ISODate("2022-09-11T10:33:00"),
+            "duracion" : "01:33:00"
+        }
     },
     {
         "_id" : 105,
@@ -98,6 +118,11 @@ db.simulaciones.insertMany([
             "enunciado" : "¿Qué te hace diferente a otros candidatos?",
             "respuesta" : "Siento que mi personalidad y el carisma que tengo me hacen diferente de los otros candidatos.",
         }
-        ]
+        ],
+        "grabacion" : {
+            "hora_inicio" : ISODate("2022-09-11T17:30:00"),
+            "hora_final" : ISODate("2022-09-11T19:23:20"),
+            "duracion" : "01:53:20"
+        }
     },
 ])
