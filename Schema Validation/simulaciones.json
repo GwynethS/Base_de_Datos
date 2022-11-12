@@ -1,5 +1,5 @@
 db.createCollection(
-    "simulaciones",
+    "historial_simulaciones",
     {
         validator: {
             $jsonSchema: {
@@ -47,7 +47,24 @@ db.createCollection(
                                 description: "respuesta' debe ser de tipo string y es obligatorio",
                             }
                         }
-                    }
+                    },
+                   "grabacion" : {
+                        bsonType: "object",
+                        required: [
+                            "hora_inicio",
+                            "hora_final",
+                        ],
+                        properties: {
+                            "hora_inicio" :{
+                                bsonType: "date",
+                                description: "hora_inicio' debe ser de tipo time y es obligatorio"
+                            },
+                            "hora_final" :{
+                                bsonType: "date",
+                                description: "hora_final' debe ser de tipo time y es obligatorio"
+                            }
+                       }
+                   }
                 }
             }
         }
