@@ -12,7 +12,8 @@ db.createCollection(
                     "edad",
                     "correo",
                     "fecha_nacimiento",
-                    "num_celular"
+                    "num_celular",
+                    "simulaciones"
                 ],
                 properties: {
                     "_id": {
@@ -52,7 +53,15 @@ db.createCollection(
                         minimum: 900000000,
                         minLength:999999999,
                         description: "num_celular' debe ser tipo int y es obligatorio"
-                   }
+                   },
+                   "simulaciones" : {
+                         bsonType: "array",
+                            "items" :{
+                                bsonType: "int",
+                                maxLength: 3,
+                             },
+                        description: "historial_simulaciones_id' debe ser un array de int y es obligatorio"
+                      }
                 },
             }
         }
