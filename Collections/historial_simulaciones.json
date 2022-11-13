@@ -1,4 +1,4 @@
-db.historial_simulaciones.insertMany([
+db.simulaciones.insertMany([
     {
         "_id" : 101,
         "usuario_id" : 10001,
