@@ -60,7 +60,7 @@ db.createCollection(
                                 bsonType: "int",
                                 maxLength: 3,
                              },
-                        description: "historial_simulaciones_id' debe ser un array de int y es obligatorio"
+                        description: "simulaciones' debe ser un array de int y es obligatorio"
                       }
                 },
             }
