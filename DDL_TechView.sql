@@ -60,7 +60,7 @@ CREATE TABLE simulaciones_preguntas(
     simulacion_id int NOT NULL,
     pregunta_id int NOT NULL,
     puesto_laboral varchar(50),
-    respuesta varchar(240),
+    respuesta varchar(450),
     CONSTRAINT simulaciones_preguntas_pk PRIMARY KEY (simulacion_id,pregunta_id),
     CONSTRAINT s_p_simulaciones_fk FOREIGN KEY (simulacion_id) REFERENCES  simulaciones(id),
     CONSTRAINT s_p_preguntas_fk FOREIGN KEY (pregunta_id) REFERENCES  preguntas(id)
