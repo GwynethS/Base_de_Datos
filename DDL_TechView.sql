@@ -57,14 +57,11 @@ CREATE TABLE preguntas(
     CONSTRAINT preguntas_pk PRIMARY KEY (id)
 );
 CREATE TABLE simulaciones_preguntas(
-    id int NOT NULL,
     simulacion_id int NOT NULL,
     pregunta_id int NOT NULL,
     puesto_laboral varchar(50),
-    nivel_experiencia varchar(50),
-    comentario varchar(120),
     respuesta varchar(240),
-    CONSTRAINT simulaciones_preguntas_pk PRIMARY KEY (id),
+    CONSTRAINT simulaciones_preguntas_pk PRIMARY KEY (simulacion_id,pregunta_id),
     CONSTRAINT s_p_simulaciones_fk FOREIGN KEY (simulacion_id) REFERENCES  simulaciones(id),
     CONSTRAINT s_p_preguntas_fk FOREIGN KEY (pregunta_id) REFERENCES  preguntas(id)
 );
@@ -74,7 +71,7 @@ CREATE TABLE grabaciones(
     simulacion_id int NOT NULL,
     hora_final time NOT NULL,
     hora_inicio time NOT NULL,
-    duracion int NOT NULL,
+    duracion time NOT NULL,
     CONSTRAINT grabaciones_pk PRIMARY KEY (id),
     CONSTRAINT g_simulaciones_fk FOREIGN KEY (simulacion_id) REFERENCES simulaciones(id)
 );
