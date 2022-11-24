@@ -7,7 +7,7 @@ db.usuarios.insertMany([
         "correo" : "hugo.quispe20@gmail.com",
         "fecha_nacimiento" : ISODate(2002,10,02), // ISODate(year, month, day)
         "num_celular" : 903405934,
-        "simulaciones" : [101,103]
+        "simulaciones" : [101,103,108]
     },
     {
         "_id" : 10002,
@@ -17,7 +17,7 @@ db.usuarios.insertMany([
         "correo" : "martin.flores22@gmail.com",
         "fecha_nacimiento" : ISODate(2000,10,10),
         "num_celular" : 902439456,
-        "simulaciones" : [102]
+        "simulaciones" : [102,106]
     },
     {
         "_id" : 10003,
@@ -35,7 +35,7 @@ db.usuarios.insertMany([
         "apellido" : "García",
         "edad" : 30,
         "correo" : "mateo.garcia23@gmail.com",
-        "fecha_nacimiento" : ISODate(1999,10,24),
+        "fecha_nacimiento" : ISODate(1992,10,24),
         "num_celular" : 987234432,
         "simulaciones" : [105]
 
@@ -48,6 +48,56 @@ db.usuarios.insertMany([
         "correo" : "leo.rodriguez30@gmail.com",
         "fecha_nacimiento" : ISODate(1992,04,10),
         "num_celular" : 903045000,
+        "simulaciones" : [107]
+    },
+   {
+        "_id" : 10006,
+        "nombre" : "Miriam",
+        "apellido" : "Marin",
+        "edad" : 23,
+        "correo" : "miriammarin@gmail.com",
+        "fecha_nacimiento" : ISODate(1999,8,12),
+        "num_celular" : 934954768,
         "simulaciones" : []
+    },
+    {
+        "_id" : 10007,
+        "nombre" : "Julia",
+        "apellido" : "Cardenas",
+        "edad" : 25,
+        "correo" : "juliacardenas@gmail.com",
+        "fecha_nacimiento" : ISODate(1997,06,16),
+        "num_celular" : 992293290,
+        "simulaciones" : []
+    },
+    {
+        "_id" : 10008,
+        "nombre" : "Gustavo",
+        "apellido" : "Valle",
+        "edad" : 28,
+        "correo" : "gustavovalle@gmail.com",
+        "fecha_nacimiento" : ISODate(1994,11,10),
+        "num_celular" : 984256524,
+        "simulaciones" : []
+    },
+    {
+        "_id" : 10009,
+        "nombre" : "Margarita",
+        "apellido" : "Alcala",
+        "edad" : 27,
+        "correo" : "margaritaalcala@gmail.com",
+        "fecha_nacimiento" : ISODate(1995,01,13),
+        "num_celular" : 998190966,
+        "simulaciones" : [109]
+    },
+     {
+        "_id" : 10010,
+        "nombre" : "Maria",
+        "apellido" : "Aranzazu",
+        "edad" : 22,
+        "correo" : "mariaaranzazu@gmail.com",
+        "fecha_nacimiento" : ISODate(2000,8,19),
+        "num_celular" : 932064749,
+        "simulaciones" : [110]
     },
 ])
