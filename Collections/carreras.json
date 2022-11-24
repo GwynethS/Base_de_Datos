@@ -44,4 +44,49 @@ db.carreras.insertMany([
             "tipo" : "Instituto"
         }
     },
+   {
+        "_id" : 6,
+        "usuario_id" : 10006,
+        "nombre" : "Ingeniería de sistemas",
+        "institucion" : {
+            "nombre" : "Universidad Nacional Mayor de San Marcos",
+            "tipo" : "Universidad"
+        }
+    },
+      {
+        "_id" : 7,
+        "usuario_id" : 10007,
+        "nombre" : "Ingeniería de sistemas",
+        "institucion" : {
+            "nombre" : "Universidad Nacional Mayor de San Marcos",
+            "tipo" : "Universidad"
+        }
+    },
+   {
+        "_id" : 8,
+        "usuario_id" : 10008,
+        "nombre" : "Farmacología",
+        "institucion" : {
+            "nombre" : "Universidad Nacional Mayor de San Marcos",
+            "tipo" : "Universidad"
+        }
+    },
+   {
+        "_id" : 9,
+        "usuario_id" : 10009,
+        "nombre" : "Técnico en Electrónica Industrial",
+        "institucion" : {
+            "nombre" : "IDAT",
+            "tipo" : "Instituto"
+        }
+    },
+   {
+        "_id" : 10,
+        "usuario_id" : 10010,
+        "nombre" : "Administración de empresas",
+        "institucion" : {
+            "nombre" : "Universidad Nacional de Piura",
+            "tipo" : "Universidad"
+        }
+    },
 ])
