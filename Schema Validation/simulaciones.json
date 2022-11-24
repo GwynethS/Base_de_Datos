@@ -10,6 +10,7 @@ db.createCollection(
                     "usuario_id",
                     "fecha_hora",
                     "calificacion",
+                    "puesto_laboral"
                 ],
                 properties: {
                     "_id" :{
@@ -27,6 +28,10 @@ db.createCollection(
                     "calificacion" : {
                         bsonType: "int",
                         description: "calificacion' debe ser de tipo int y es obligatorio",
+                    },
+                    "puesto_laboral" : {
+                        bsonType: "string",
+                        description: "puesto_labora' debe ser de tipo string y es obligatorio"
                     },
                     "preguntas" : {
                         bsonType: "array",
