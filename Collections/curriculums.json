@@ -1,6 +1,6 @@
 db.curriculums.insertMany([
     {
-        "_id" : 1,
+        "_id" : 2011,
         "usuario_id" : 10001,
         "fortalezas" : ["Creatividad", "Persistencia", "Liderazgo"],
         "idiomas" : [
@@ -19,7 +19,7 @@ db.curriculums.insertMany([
        }],
     },
      {
-        "_id" : 2,
+        "_id" : 2012,
         "usuario_id" : 10002,
         "fortalezas" : ["Estética", "Concentración", "Audacia"],
         "idiomas" : [
@@ -38,7 +38,7 @@ db.curriculums.insertMany([
        }],
     },
     {
-        "_id" : 3,
+        "_id" : 2013,
         "usuario_id" : 10003,
         "fortalezas" : ["Persistencia", "Audacia", "Empatía", "Concentración"],
         "idiomas" : [
@@ -57,7 +57,7 @@ db.curriculums.insertMany([
        }],
     },
      {
-        "_id" : 4,
+        "_id" : 2014,
         "usuario_id" : 10004,
         "fortalezas" : ["Estética", "Esperanza", "Adaptabilidad"],
         "idiomas" : [
@@ -80,7 +80,7 @@ db.curriculums.insertMany([
        }],
     },
     {
-        "_id" : 5,
+        "_id" : 2015,
         "usuario_id" : 10005,
         "fortalezas" : ["Concentración", "Liderazgo"],
         "idiomas" :
@@ -92,5 +92,59 @@ db.curriculums.insertMany([
             "descripcion" : "Conocimiento de Redes sociales",
             "nivel_expertiz" : "Avanzado",
        }],
+    },
+     {
+        "_id" : 2016,
+        "usuario_id" : 10006,
+        "fortalezas" : ["Persistencia", "Empatía", "Adaptabilidad"],
+        "idiomas" :
+        [
+        {
+            "nombre" : "Español",
+            "nivel_expertiz" : "Avanzado"
+        },
+        {
+            "nombre" : "Portugues",
+            "nivel_expertiz" : "Avanzado"
+        }
+        ],
+       "habilidades_tecnicas": [{
+            "descripcion" : "Capacidad de redacción",
+            "nivel_expertiz" : "Avanzado",
+       }],
+    },
+        {
+        "_id" : 2017,
+        "usuario_id" : 10007,
+        "fortalezas" : ["Creatividad", "Esperanza", "Adaptabilidad"],
+        "idiomas" :
+        [  {
+            "nombre" : "Español",
+            "nivel_expertiz" : "Avanzado"
+        }],
+       "habilidades_tecnicas": [{
+            "descripcion" : "Técnicas básicas de diseño gráfico (Photoshop o Illustrator).",
+            "nivel_expertiz" : "Intermedio",
+       }],
+    },
+      {
+        "_id" : 2018,
+        "usuario_id" : 10008,
+        "fortalezas" : ["Persistencia", "Estética", "Esperanza", "Concentración"],
+        "idiomas" :
+        [  {
+            "nombre" : "Español",
+            "nivel_expertiz" : "Avanzado"
+        }],
+       "habilidades_tecnicas": [
+       {
+            "descripcion" : "Concoimiento de la Informática.",
+            "nivel_expertiz" : "Avanzado",
+       },
+       {
+            "descripcion" : "Programación",
+            "nivel_expertiz" : "Avanzado"
+       }
+       ],
     },
 ])
