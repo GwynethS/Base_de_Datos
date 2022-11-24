@@ -4,6 +4,7 @@ db.simulaciones.insertMany([
         "usuario_id" : 10001,
         "fecha_hora" : ISODate("2022-09-10T10:00:00"),
         "calificacion" : 17,
+        "puesto_laboral" : "Docencia",
         "preguntas" : [
         {
             "enunciado" : "¿Qué experiencias laborales y/o entrevistas ha tenido antes de la simulación?",
@@ -29,6 +30,7 @@ db.simulaciones.insertMany([
         "usuario_id" : 10002,
         "fecha_hora" : ISODate("2022-09-10T13:00:00"),
         "calificacion" : 19,
+        "puesto_laboral": "Gerente de Logística",
         "preguntas" : [
         {
             "enunciado" : "¿Coincide el puesto con tus expectativas a futuro?",
@@ -55,6 +57,7 @@ db.simulaciones.insertMany([
         "usuario_id" : 10001,
         "fecha_hora" : ISODate("2022-09-10T15:30:00"),
         "calificacion" : 18,
+        "puesto_laboral" : "Docencia",
         "preguntas" : [
         {
             "enunciado" : "¿Cuál es el mayor reto y/o la mejor decisión que has tomado en tu vida?",
@@ -80,6 +83,7 @@ db.simulaciones.insertMany([
         "usuario_id" : 10003,
         "fecha_hora" : ISODate("2022-09-11T09:00:00"),
         "calificacion" : 15,
+        "puesto_laboral" : "Recursos Humanos",
         "preguntas" : [
         {
             "enunciado" : "¿Cuál es tu mayor debilidad o defecto?",
@@ -105,6 +109,7 @@ db.simulaciones.insertMany([
         "usuario_id" : 10004,
         "fecha_hora" : ISODate("2022-09-11T17:30:00"),
         "calificacion" : 14,
+        "puesto_laboral" : "Programador",
         "preguntas" : [
         {
             "enunciado" : "¿Por qué quieres trabajar en nuestra empresa ?",
@@ -124,5 +129,96 @@ db.simulaciones.insertMany([
             "hora_final" : ISODate("2022-09-11T19:23:20"),
             "duracion" : "01:53:20"
         }
+    },
+    {
+        "_id" : 106,
+        "usuario_id" : 10002,
+        "fecha_hora" : ISODate("2022-09-12T16:00:00"),
+        "calificacion" : 20,
+        "puesto_laboral" : "Gerente de Logística",
+        "preguntas" : [
+        {
+            "enunciado" : "¿Cuáles son tus metas?",
+            "respuesta" : "A corto plazo espero trabajar en una empresa como la suya, con una misión basada en una brillante difusión de su marca. \n"+
+                           "Trabajar como gerente de logística para una empresa en la que deseo que contribuya en mi preparación para ir asumiendo responsabilidades cada vez más amplias como liderar un equipo en el futuro.",
+        },
+        {
+            "enunciado" : "¿Por qué deberíamos contratarte?",
+            "respuesta" : "La verdad es que cuando he leído la oferta de empleo parecía hecha para mí. Están buscando un ingeniero bilingüe en portugues, que aprenda rápido y que tenga capacidad para trabajar en un equipo multidisciplinar.  Y ese soy yo. Ingeniero industrial con amplias fortalezas.",
+        },
+        ],
+        "grabacion" : {
+            "hora_inicio" : ISODate("2022-09-12T16:00:00"),
+            "hora_final" : ISODate("2022-09-12T16:50:05"),
+            "duracion" : "00:50:05"
+        }
+    },
+    {
+        "_id" : 107,
+        "usuario_id" : 10005,
+        "fecha_hora" : ISODate("2022-09-13T12:00:00"),
+        "calificacion" : 17,
+        "puesto_laboral" : "Administrador de tecnologías de la información",
+        "preguntas" : [
+        {
+            "enunciado" : "¿Cuál es tu mayor debilidad o defecto?",
+            "respuesta" : "Me niego a creer que puedo resolver cualquier problema por mi cuenta. Esto funciona bien en algunas situaciones, pero en muchos casos, necesito la ayuda de otros para superar factores fuera de mi control. En un caso el año pasado, estaba organizando un evento para clientes que tenía muchos componentes diferentes.",
+        },
+        {
+            "enunciado" : "¿Qué te gusta hacer en tu tiempo libre?",
+            "respuesta" : "En mi tiempo libre me gusta asistir a talleres de liderazgo, ver videos de tecnologías actuales a nivel mundial, navegar y postear fotos en mis redes sociales.",
+        },
+        ],
+        "grabacion" : {
+            "hora_inicio" : ISODate("2022-09-13T12:00:00"),
+            "hora_final" : ISODate("2022-09-13T12:15:00"),
+            "duracion" : "00:15:00"
+        }
+
+    },
+    {
+        "_id" : 108,
+        "usuario_id" : 10001,
+        "fecha_hora" : ISODate("2022-09-13T17:00:00"),
+        "calificacion" : 18,
+        "puesto_laboral" : "Docencia",
+        "preguntas" : [
+        {
+            "enunciado" : "¿Cuál es su mayor logro?",
+            "respuesta" : "Uno de mis mayores logros fue pertenecer al grupo competitivo de marketing de empresas a nivel mundial, el estudiar en el extranjero siendo becado también lo considero como un logro.",
+        },
+        {
+            "enunciado" : "¿Qué te gusta hacer en tu tiempo libre?",
+            "respuesta" : "En mi tiempo libre práctico mi habla y escritura en inglés para poder en un futuro, trabajar en una empresa américana lider en ciencias económicas y empresariales.",
+        },
+        ],
+        "grabacion" : {
+            "hora_inicio" : ISODate("2022-09-13T17:00:00"),
+            "hora_final" : ISODate("2022-09-13T17:50:28"),
+            "duracion" : "00:50:28"
+        }
+    },
+        {
+        "_id" : 109,
+        "usuario_id" : 10009,
+        "fecha_hora" : ISODate("2022-09-14T18:00:00"),
+        "calificacion" : 19,
+        "puesto_laboral" : "Programador",
+        "preguntas" : [
+        {
+            "enunciado" : "¿Por qué deberíamos contratarte?",
+            "respuesta" : "Tengo la habilidad para resolver situaciones potencialmente difíciles, especialmente en el ámbito de programación orientada a objetos. He logrado comprender y dominar lenguajes como C++, Python y JavaScript. Me resulta muy fácil trabajar en equipo, puedo ser líder tranquilamente.",
+        },
+        {
+            "enunciado" : "¿Cuáles son tus metas?",
+            "respuesta" : "Mis metas son poder trabajar en una empresa lider a nivel mundial ya sea Google, Microsoft, Apple, etc. También quisiera crear mi propio lenguaje de programación, que le resulte útil y tenga una alta demanda entre ingenieros como yo.",
+        },
+        ],
+        "grabacion" : {
+            "hora_inicio" : ISODate("2022-09-14T18:00:00"),
+            "hora_final" : ISODate("2022-09-14T18:50:19"),
+            "duracion" : "00:50:19"
+        }
+
     },
 ])
