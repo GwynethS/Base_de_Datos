@@ -138,7 +138,7 @@ db.curriculums.insertMany([
         }],
        "habilidades_tecnicas": [
        {
-            "descripcion" : "Concoimiento de la Informática.",
+            "descripcion" : "Concoimiento de la Informática",
             "nivel_expertiz" : "Avanzado",
        },
        {
